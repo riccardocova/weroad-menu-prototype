@@ -353,9 +353,11 @@ const MARKETS = {
       { id:"africa", label:"Africa", img:"africa",
         subs:[
           { id:"nafrica", label:"North Africa", img:"north_africa", active:true,
-            dests:["Morocco","Egypt","Tunisia"], cta:"See all North Africa" }
+            dests:["Morocco","Egypt","Tunisia"], cta:"See all North Africa" },
+          { id:"islands", label:"African Islands", img:"african_islands", active:false,
+            dests:["Cabo Verde"], cta:"See all African Islands" }
         ],
-        dests:["Tanzania","Zimbabwe","Madagascar","Namibia","Mozambique","Kenya","South Africa"],
+        dests:["Tanzania","Zimbabwe","Madagascar","Namibia","Mozambique","Kenya","South Africa","Cabo Verde"],
         cta:"See all Africa" },
       { id:"latam", label:"Latin America", img:"latin_america", subs:[],
         dests:["Peru","Mexico","Argentina","Ecuador","Brazil","Colombia","Cuba","Puerto Rico","Costa Rica","Dominican Republic","Guatemala"],
@@ -386,8 +388,13 @@ const MARKETS = {
         dests:["Sri Lanka","Nepal","India","Maldivas","Uzbekistán","Kirguistán","Japón","Kazajistán","China","Corea del Sur"],
         cta:"Ver toda Asia" },
       { id:"africa", label:"África", img:"africa",
-        subs:[],
-        dests:["Marruecos","Egipto","Tanzania","Madagascar","Namibia","Uganda","Kenia","Mauricio","Senegal","Sudáfrica","Cabo Verde"],
+        subs:[
+          { id:"nafrica", label:"Norte de África", img:"north_africa", active:true,
+            dests:["Marruecos","Egipto","Túnez"], cta:"Ver todo Norte de África" },
+          { id:"islands", label:"Islas Africanas", img:"african_islands", active:false,
+            dests:["Cabo Verde","Mauricio"], cta:"Ver todas las Islas Africanas" }
+        ],
+        dests:["Tanzania","Madagascar","Namibia","Uganda","Kenia","Senegal","Sudáfrica"],
         cta:"Ver toda África" },
       { id:"latam", label:"América Latina", img:"latin_america", subs:[],
         dests:["México","Argentina","Cuba","Ecuador","Costa Rica","Colombia","Chile","Panamá","Perú","Brasil","Rep. Dominicana","Guatemala"],
@@ -457,9 +464,11 @@ const MARKETS = {
       { id:"afrique", label:"Afrique", img:"africa",
         subs:[
           { id:"nafrica", label:"Afrique du Nord", img:"north_africa", active:true,
-            dests:["Maroc","Égypte","Tunisie"], cta:"Voir toute l'Afrique du Nord" }
+            dests:["Maroc","Égypte","Tunisie"], cta:"Voir toute l'Afrique du Nord" },
+          { id:"islands", label:"Îles africaines", img:"african_islands", active:false,
+            dests:["Cap-Vert","Maurice"], cta:"Voir toutes les Îles africaines" }
         ],
-        dests:["Tanzanie","Afrique du Sud","Rwanda","Cap-Vert","Madagascar","Namibie","Maurice","Kenya"],
+        dests:["Tanzanie","Afrique du Sud","Rwanda","Madagascar","Namibie","Kenya","Cap-Vert","Maurice"],
         cta:"Voir toute l'Afrique" },
       { id:"latam", label:"Amérique Latine", img:"latin_america", subs:[],
         dests:["Mexique","Argentine","Cuba","Équateur","Costa Rica","Colombie","Brésil","Nicaragua","Guatemala","Martinique","Panama","Pérou","Jamaïque"],
