@@ -544,9 +544,10 @@ function renderPanel() {
     title = sub.label; dests = sub.dests; cta = sub.cta; imgKey = sub.img;
   } else {
     title = region.label; cta = region.cta; imgKey = region.img;
-    // all dests: sub dests first, then direct
+    // Region panel: only direct destinations + dests from INACTIVE sub-regions
+    // Active sub-regions have their own panel entry — destinations NOT repeated here
     dests = [];
-    region.subs.filter(s=>s.active).forEach(s => dests.push(...s.dests));
+    region.subs.filter(s=>!s.active).forEach(s => dests.push(...s.dests));
     dests.push(...region.dests);
   }
   document.getElementById('panelTitle').textContent = title;
